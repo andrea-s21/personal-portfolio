@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    height: 59vh;
+    height: 65vh;
     background-color: #CBDDD1; 
 }
 
@@ -16,13 +16,11 @@ header {
 }
 
 .hero_title {
-    padding: 30px;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 800;
 }
 
 .hero_desc {
-    padding: 30px;
     font-size: 2rem;
 }
 
@@ -42,7 +40,7 @@ section {
     border: 20px;
     font-size: 1.2rem;
     padding-top: 55px;
-    height: 60vh;
+    height: 70vh;
     background-color: #F1EEE2; 
     background-position: top; 
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 87%);
