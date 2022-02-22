@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    background-color: #CBDDD1;
+}
+
+header {
+    height: 59vh;
+    background-color: #CBDDD1; 
+}
+
+#header-img {
+    width: 100vh;
+}
+
+.hero_title {
+    padding: 30px;
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.hero_desc {
+    padding: 30px;
+    font-size: 2rem;
+}
+
+img.logo {
+    width: 9vh;
+    margin: auto;
+    padding-left: 2vh;
+}
+
+section {
+    margin: 0px 50px;
+    border: 10px;
+    padding: 70px;
+}
+
+#about {
+    border: 20px;
+    font-size: 1.2rem;
+    padding-top: 55px;
+    height: 60vh;
+    background-color: #F1EEE2; 
+    background-position: top; 
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 87%);
+}
+
+.responsive-img {
+    width: 50vh;
+}
+
+#work {
+    padding-top: 100px;
+    height: 200vh;
+    background-color: #F1EEE2;
+    background-position: top; 
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+}
+
+#skills {
+    border: 20px;
+    font-size: 1.2rem;
+    padding-top: 2px;
+    height: 90vh;
+}
+
+#skills-img {
+    width: 120vh;
+}
+
+#contact {
+    border: 20px;
+    padding-top: 2px;
+    height: 60vh;
+}
