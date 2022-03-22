@@ -4,24 +4,29 @@ body {
     flex-direction: column;
     font-family: 'Playfair Display', serif;
     background-color: #CBDDD1;
+    background-image: url(images/headshot.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 50vh;
 }
 
-header {
-    height: 65vh;
-    background-color: #CBDDD1; 
+#headshot {
+    height: 30vh;
 }
 
-#header-img {
-    width: 100vh;
+#banner {
+    padding-top: 10vh;
+    height: 90vh;
+    justify-content: center;
 }
 
-.hero_title {
-    font-size: 4rem;
-    font-weight: 800;
+#header-img-logo {
+    height: 45vh;
 }
 
-.hero_desc {
-    font-size: 2rem;
+#hero_desc {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 img.logo {
@@ -39,7 +44,7 @@ section {
 #about {
     border: 20px;
     font-size: 1.2rem;
-    padding-top: 55px;
+    padding-top: 100px;
     height: 70vh;
     background-color: #F1EEE2; 
     background-position: top; 
@@ -52,25 +57,228 @@ section {
 
 #work {
     padding-top: 100px;
-    height: 200vh;
+    height: 170vh;
     background-color: #F1EEE2;
     background-position: top; 
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    justify-content: center;
+}
+
+#projects {
+    display: grid;
+    gap: 15vmin;
+    grid-template-columns: repeat(2, 50vh);
+    grid-template-rows: repeat(2, 50vh);
 }
 
 #skills {
     border: 20px;
     font-size: 1.2rem;
     padding-top: 2px;
-    height: 90vh;
+    height: 120vh;
 }
 
 #skills-img {
-    width: 120vh;
+    width: 150vh;
+}
+
+#skills-btn {
+    width: 25vmin;
+    align-content: left;
 }
 
 #contact {
     border: 20px;
     padding-top: 2px;
-    height: 60vh;
+    height: 75vh;
 }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        background-image: none;
+    }
+
+    #banner {
+        padding-top: 80vmin;
+        height: 90vh;
+        display: grid;
+        gap: 5vmin;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 30vh);
+        grid-template-rows: repeat(3, 20vh);
+        align-items: center;
+    }
+
+    #header-img-logo {
+        height: 15vh;
+    }
+
+    .hero_title {
+        font-size: .5rem;
+        font-weight: 800;
+        box-sizing: content-box;
+        width: 70vmin;
+    }
+    
+    .hero_desc {
+        font-size: .2rem;
+        box-sizing: content-box;
+        width: 70vmin;
+    }
+
+    #work {
+        height: 260vh;
+    }
+    #about {
+        height: 260vh;
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+    }
+
+    #projects {
+        display: grid;
+        gap: 5vmin;
+        grid-template-columns: repeat(1, 25vh);
+    }
+
+    #skills {
+        visibility: hidden;
+        height: 10vh;
+    }
+
+    #skills-btn {
+        visibility: hidden;
+    }
+
+    #contact {
+        height: 55vh;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    body {
+        background-image: none;
+    }
+
+    #banner {
+        padding-top: 35vmin;
+        height: 75vh;
+        display: grid;
+        gap: 5vmin;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 30vh);
+        grid-template-rows: repeat(3, 20vh);
+        align-items: center;
+    }
+
+    #header-img-logo {
+        height: 20vh;
+    }
+
+    .hero_title {
+        font-size: 3rem;
+        font-weight: 800;
+        box-sizing: content-box;
+        width: 70vmin;
+    }
+    
+    .hero_desc {
+        font-size: 1.5rem;
+        box-sizing: content-box;
+        width: 75vmin;
+    }
+
+    #work {
+        height: 240vh;
+    }
+    #about {
+        height: 80vh;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+    }
+
+    #skills-btn {
+        width: 30vh;
+    }
+
+    #projects {
+        display: grid;
+        gap: 5vmin;
+        grid-template-columns: repeat(1, 25vh);
+    }
+
+    #skills {
+        height: 45vh;
+    }
+
+    #contact {
+        height: 60vh;
+    }
+
+    #footer {
+       align-self: stretch;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    body {
+        background-size: 30vh;
+    }
+
+    #banner {
+        padding-top: 25vmin;
+        height: 60vh;
+        display: grid;
+        gap: 5vmin;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 30vh);
+        grid-template-rows: repeat(3, 20vh);
+        align-items: center;
+    }
+
+    #header-img-logo {
+        height: 20vh;
+    }
+
+    .hero_title {
+        font-size: 2rem;
+        font-weight: 800;
+        box-sizing: content-box;
+        width: 70vmin;
+    }
+    
+    .hero_desc {
+        font-size: 1.2rem;
+        box-sizing: content-box;
+        width: 40vmin;
+        justify-content: center;
+    }
+
+    #work {
+        padding-top: 10vh;
+        height: 220vh;
+    }
+    #about {
+        height: 60vh;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+    }
+
+    #projects {
+        display: grid;
+        gap: 5vmin;
+        grid-template-columns: repeat(1, 25vh);
+    }
+
+    #skills {
+        height: 50vh;
+    }
+
+    #contact {
+        height: 50vh;
+    }
+
+    #footer {
+       align-self: stretch;
+    }
+}
+
+

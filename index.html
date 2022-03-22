@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script defer src="/script/script.js"></script>
+    <script defer src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Andrea Sisneros Portfolio</title>
 </head>
@@ -30,16 +30,21 @@
                         <li><a class="white-text" href="#work">Work</a></li>
                         <li><a class="white-text" href="#skills">Skills</a></li>
                         <li><a class="white-text" href="#contact">Contact Me</a></li>
+                        <li><a
+                                href="https://drive.google.com/file/d/1_Pz_56EN8aale23Pv1jmmgM2ilQBmSJK/view?usp=sharing">My
+                                Resume</a></li>
                         <li><a class="white-text" href="https://www.linkedin.com/in/andrea-sisneros/">Reach Out On
                                 LinkedIn</a></li>
                     </ul>
                 </div>
         </div>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="#about">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#resum}">Contact Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="https://drive.google.com/file/d/1_Pz_56EN8aale23Pv1jmmgM2ilQBmSJK/view?usp=sharing">My
+                    Resume</a></li>
             <li><a href="https://www.linkedin.com/in/andrea-sisneros/">Reach Out On LinkedIn</a></li>
         </ul>
         <script>
@@ -49,47 +54,37 @@
             });
         </script>
         </nav>
-        <!-- main banner -->
-        <section id="banner">
-            <div>
-                <div class="row">
-                    <div class="col s7">
-                        <div>
-                            <h2 class="hero_title teal-text text-darken-4">Andrea Sisneros</h2>
-                            <p class="hero_desc teal-text text-darken-4">Full-stack web developer with a background in
-                                marketing who has a passion for melding creativity and analytical problem-solving.</p>
-                        </div>
-                    </div>
-                    <div class="col s5">
-                        <img class="responsive-img" src="images/headshot.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
     </header>
+    <!-- main banner -->
+    <section id="banner">
+        <div class="center">
+            <img id="header-img-logo" src="images/Logo.svg" alt="">
+            <p id="hero_desc" class="teal-text text-darken-4 ">Junior frontend engineer with a background in
+                marketing and a passion for melding creativity and analytical problem-solving in development.</p>
+        </div>
+    </section>
     <!-- about section-->
     <section id="about">
-        <div>
-            <h1 class="teal-text text-darken-4">About Me</h1>
-            <div>
-                <p> Welcome! Thanks for taking the time to review my portfolio. I am a recent career changer who is
-                    working to break in to the tech industry. After graduating college, I worked in various marketing
-                    and communications roles. I enjoyed the fast-paced environment and the collaboration behind the
-                    creation of creative ways to promote new initiatives. While both challenging and fun, I consistently
-                    found myself wanting to engage with my interests in technical and creative problem-solving.
-                    Therefore, I decided to use my unique experience and education, to put these skills to work and
-                    change careers.
-                    As an aspiring full-stack developer, I have had a lot of fun learning so many new things since
-                    taking the plunge into a new career in tech, and am eager to continue learning and growing in the
-                    field.
-
-
-                </p>
-                <p>My previous experiences in marketing and communications have given me unique perspective and insight
-                    on app development from creation to client-side. As a multi-passionate individual, I am always
-                    looking for new ways to expand my knowledge, and channel this in my day-to-day life as a developer.
-                    Nothing beats seeing projects come to life, from start to finish.</p>
-            </div>
+        <h1 class="teal-text text-darken-4">About Me</h1>
+        <p> Welcome! Thanks for taking the time to review my portfolio. I am a recent career changer
+            working to break into the tech industry. After graduating college, I worked in various marketing
+            and communications roles. I enjoyed the fast-paced environment and the collaboration behind the
+            creation of creative ways to promote new initiatives. While both challenging and fun, I consistently
+            found myself wanting to engage with my interests in technical and creative problem-solving.
+            Therefore, I decided to use my unique experience and education, to put these skills to work and
+            change careers.
+            As an aspiring junior frontend engineer, I have had a lot of fun learning so many new things since
+            taking the plunge into a new career in tech, and am eager to continue learning and growing in the
+            field.
+        </p>
+        <p>My previous experiences in marketing and communications give me a unique perspective and insight
+            into app development from creation to client-side. As a multi-passionate individual, I am always
+            looking for new ways to expand my knowledge, and channel this in my day-to-day life as a developer.
+            Nothing beats seeing projects come to life, from start to finish.</p>
+        <div class="container left-align left">
+            <a id="skills-btn" class="waves-effect waves-light btn teal darken-4 white-text"
+                href="https://drive.google.com/file/d/1_Pz_56EN8aale23Pv1jmmgM2ilQBmSJK/view?usp=sharing">check out my
+                resume</a>
         </div>
     </section>
     <!-- resume/skills section -->
@@ -99,82 +94,78 @@
             <div class="col s12 center">
                 <img id="skills-img" class="responsive-img" src="images/skills.svg">
             </div>
-            <div class="container center-align">
-                <a class="waves-effect waves-light btn teal darken-4 white-text"
-                    href="https://drive.google.com/file/d/1-Lg0K6qV8u3C2C-q2GGgbtr_6pvJFdfV/view?usp=sharing">Click Here
-                    to check out my resume!</a>
-            </div>
         </div>
     </section>
     <!-- work section-->
     <section id="work">
         <h1 class="teal-text text-darken-4">My Work</h1>
-        <div class="row">
-            <div class="col s6">
-                <div class="center">
-                    <img class="responsive-img" src="images/project1.svg">
-                </div>
-                <div class="container center-align">
-                    <p>Astrology Concentration is a game app that adds a galactic experience to both the user-interface
-                        and user-experience, and was created with HTML, CSS and JavaScript.</p>
-                    <a class="waves-effect waves-light btn teal darken-4 white-text"
-                        href="https://andrea-s21.github.io/concentration-matching-pairs/">Live Project</a>
-                    <a class="waves-effect waves-light btn teal darken-4 white-text"
-                        href="https://github.com/andrea-s21/concentration-matching-pairs">GitHub Repo</a>
-                </div>
+        <div id="projects" class="center">
+            <div>
+                <img class="responsive-img" src="images/project1.svg">
+                <p>Astrology Concentration is a game app that adds a galactic experience to both the user-interface
+                    and user-experience, and was created with HTML, CSS and JavaScript.</p>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://andrea-s21.github.io/concentration-matching-pairs/">Live Project</a>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://github.com/andrea-s21/concentration-matching-pairs">GitHub Repo</a>
             </div>
-            <div class="col s6">
-                <div class="center">
-                    <img class="responsive-img" src="images/project2.svg">
-                </div>
-                <div class="container center-align">
-                    <p>Bookmarki is a bookmark organization app that allows users to organize bookmarks by creating
-                        unique categories and is a MEN-stack CRUD application. </p>
-                    <a class="waves-effect waves-light btn teal darken-4 white-text"
-                        href="https://bookmarki.herokuapp.com/">Live Project</a>
-                    <a class="waves-effect waves-light btn teal darken-4 white-text"
-                        href="https://github.com/andrea-s21/bookmarki-app">GitHub Repo</a>
-                </div>
+            <div>
+                <img class="responsive-img" src="images/project2.svg">
+                <p>Bookmarki is a bookmark organization app that allows users to organize bookmarks by creating
+                    unique categories and is a MEN-stack CRUD application. </p>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://bookmarki.herokuapp.com/">Live Project</a>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://github.com/andrea-s21/bookmarki-app">GitHub Repo</a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <div class="center">
-                    <img class="responsive-img" src="images/project3.svg">
-                </div>
-                <div class="container center-align">
-                    <p>Bottoms Up! Id a full-stack Django application that randomly generates a unique cocktail based on
-                        a user's day by consuming a third party API. </p>
-                    <a class="waves-effect waves-light btn teal darken-4 white-text"
-                        href="https://bottoms-up-app-rad.herokuapp.com/">Live Project</a>
-                    <a class="waves-effect waves-light btn teal darken-4 white-text"
-                        href="https://github.com/andrea-s21/bottoms-up-app">GitHub Repo</a>
-                </div>
+            <div>
+                <img class="responsive-img" src="images/project3.svg">
+                <p>Bottoms Up! Is a full-stack Django application that randomly generates a unique cocktail based on
+                    a user's day by consuming a third party API. </p>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://bottoms-up-app-rad.herokuapp.com/">Live Project</a>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://github.com/andrea-s21/bottoms-up-app">GitHub Repo</a>
+            </div>
+            <div>
+                <img class="responsive-img" src="images/project4.svg">
+                <p>BookBuy is a MERN-stack application that consumes the Google Books API to create an ecommerce
+                    marketplace for buying and selling a variety of used books.</p>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://book-buy-app.herokuapp.com/">Live Project</a>
+                <a class="waves-effect waves-light btn teal darken-4 white-text"
+                    href="https://github.com/andrea-s21/book-buy-app">GitHub Repo</a>
             </div>
         </div>
     </section>
     <!-- contact section-->
     <section id="contact">
-        <h1 class="teal-text text-darken-4">Contact</h1>
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button class="waves-effect waves-light btn teal darken-4 white-text" type="submit">Send</button>
-            </p>
-        </form>
+        <div class="row">
+            <div class="col s10">
+                <h1 class="teal-text text-darken-4">Contact</h1>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button class="waves-effect waves-light btn teal darken-4 white-text"
+                            type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+        </div>
     </section>
     <footer class="teal darken-4">
         <div class="right-align">
             <p class="white-text">Created by Andrea Sisneros &copy; 2022 &nbsp</p>
         </div>
+    </footer>
 </body>
 
 </html>
